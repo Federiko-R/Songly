@@ -1,0 +1,35 @@
+@use '_mixins.sass' as *
+html 
+    height: 200vh
+header
+    @include fix(-120px, 30px, unset, 30px, 1)
+    @include box(calc(100% - 60px), auto, 0, 0, 0)
+    min-height: 60px
+    transition: top .3s
+    #pool 
+        @include flex(row, center, center)
+        width: 100%
+        min-height: 60px
+        border-radius: 30px
+
+        flex-wrap: wrap
+
+        background: white
+        box-shadow: 0 0 6px 3px#f0f0f0
+        i 
+            font: normal bold 18px/18px Noah
+            color: #202020 
+            padding: 12px
+    #drop 
+        @include fix(50%, unset, unset, 50%, 1)
+        @include box(240px, 240px, 0, 30px, 0)
+        display: none
+        
+        background-color: white
+        box-shadow: 0 0 6px 3px#f0f0f0
+        transform: translate(-50%, -50%)
+        background-position: center 
+        background-size: 50% 
+        background-repeat: no-repeat
+        img 
+            display: none

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutu de Camilo y Pedro Capo">
+    <meta name="theme-color" content="#ffffff">
+    <title>Songly - Tutu</title>
+    <link rel="canonical" href="https://songly-music.web.app/index.html">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/assets/images/16px.png" sizes="16x16">
+    <link rel="icon" href="/assets/images/32px.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/images/Icon-60@2x.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/images/Icon-60@3x.png" sizes="180x180">
+    <link rel="stylesheet" href="/assets/css/mobile/style.min.css" media="(orientation: portrait)">
+    <link rel="stylesheet" href="/assets/css/desktop/style.min.css" media="(orientation: landscape)">
+    <link rel="preload" as="style" href="/assets/css/mobile/style.min.css" media="(orientation: portrait)">
+    <link rel="preload" as="style" href="/assets/css/desktop/style.min.css" media="(orientation: landscape)">
+    <link rel="preload" as="script" href="/assets/js/preload.js">
+    <script src="/assets/js/preload.js"></script>
+    <script defer src="/sw.js"></script>
+    <style>
+        @font-face {font-family: Nexa; font-display: swap; src: url(/assets/fonts/nexa/Nexa-Bold.otf); font-weight: 600;}
+        @font-face {font-family: Noah; font-display: swap; src: url(/assets/fonts/noah/Noah-Regular.otf); font-weight: 400}
+        @font-face {font-family: Noah; font-display: swap; src: url(/assets/fonts/noah/Noah-Bold.otf); font-weight: 600;}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <button>
+            <svg width="36px" height="36px" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"><path d="M1 2 L7 2 M1 4 L7 4 M1 6 L7 6" stroke="currentColor" stroke-linecap="round"/></svg>
+            <p>Menu</p>
+        </button>
+        <div>
+            <a href="/index.html">
+                <svg width="36px" height="36px" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 4V7H3V6H5V7H6V4L4 2Z" fill="white" stroke="white" stroke-linejoin="round" />
+                    <path d="M1 3.5L4 0.5L7 3.5M5.5 2V0.5H6V2.5" fill="none" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <rect width="1" height="1.5" x="3.5" y="5.5" rx="0.25" fill="#404040" />
+                </svg>
+                <p>Home</p>
+            </a>
+            <a href="/canciones/index.html">
+                <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512' fill='currentColor'>
+                    <path
+                        d='M292.6 407.78l-120-320a22 22 0 00-41.2 0l-120 320a22 22 0 0041.2 15.44l36.16-96.42a2 2 0 011.87-1.3h122.74a2 2 0 011.87 1.3l36.16 96.42a22 22 0 0041.2-15.44zm-185.84-129l43.37-115.65a2 2 0 013.74 0l43.37 115.67a2 2 0 01-1.87 2.7h-86.74a2 2 0 01-1.87-2.7zM400.77 169.5c-41.72-.3-79.08 23.87-95 61.4a22 22 0 0040.5 17.2c8.88-20.89 29.77-34.44 53.32-34.6 32.32-.22 58.41 26.5 58.41 58.85a1.5 1.5 0 01-1.45 1.5c-21.92.61-47.92 2.07-71.12 4.8-54.75 6.44-87.43 36.29-87.43 79.85 0 23.19 8.76 44 24.67 58.68C337.6 430.93 358 438.5 380 438.5c31 0 57.69-8 77.94-23.22h.06a22 22 0 1044 .19v-143c0-56.18-45-102.56-101.23-102.97zM380 394.5c-17.53 0-38-9.43-38-36 0-10.67 3.83-18.14 12.43-24.23 8.37-5.93 21.2-10.16 36.14-11.92 21.12-2.49 44.82-3.86 65.14-4.47a2 2 0 012 2.1C455 370.1 429.46 394.5 380 394.5z' />
+                </svg>
+                <p>Canciones</p>
+            </a>
+            <a href="/acordes/index.html">
+                <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512' fill='currentColor'>
+                    <path
+                        d='M64 144h226.75a48 48 0 0090.5 0H448a16 16 0 000-32h-66.75a48 48 0 00-90.5 0H64a16 16 0 000 32zM448 368h-66.75a48 48 0 00-90.5 0H64a16 16 0 000 32h226.75a48 48 0 0090.5 0H448a16 16 0 000-32zM448 240H221.25a48 48 0 00-90.5 0H64a16 16 0 000 32h66.75a48 48 0 0090.5 0H448a16 16 0 000-32z' />
+                </svg>
+                <p>Acordes</p>
+            </a>
+            <a href="/artistas/index.html">
+                <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512' fill='currentColor'>
+                    <path
+                        d='M336 256c-20.56 0-40.44-9.18-56-25.84-15.13-16.25-24.37-37.92-26-61-1.74-24.62 5.77-47.26 21.14-63.76S312 80 336 80c23.83 0 45.38 9.06 60.7 25.52 15.47 16.62 23 39.22 21.26 63.63-1.67 23.11-10.9 44.77-26 61C376.44 246.82 356.57 256 336 256zm66-88zM467.83 432H204.18a27.71 27.71 0 01-22-10.67 30.22 30.22 0 01-5.26-25.79c8.42-33.81 29.28-61.85 60.32-81.08C264.79 297.4 299.86 288 336 288c36.85 0 71 9 98.71 26.05 31.11 19.13 52 47.33 60.38 81.55a30.27 30.27 0 01-5.32 25.78A27.68 27.68 0 01467.83 432zM147 260c-35.19 0-66.13-32.72-69-72.93-1.42-20.6 5-39.65 18-53.62 12.86-13.83 31-21.45 51-21.45s38 7.66 50.93 21.57c13.1 14.08 19.5 33.09 18 53.52-2.87 40.2-33.8 72.91-68.93 72.91zM212.66 291.45c-17.59-8.6-40.42-12.9-65.65-12.9-29.46 0-58.07 7.68-80.57 21.62-25.51 15.83-42.67 38.88-49.6 66.71a27.39 27.39 0 004.79 23.36A25.32 25.32 0 0041.72 400h111a8 8 0 007.87-6.57c.11-.63.25-1.26.41-1.88 8.48-34.06 28.35-62.84 57.71-83.82a8 8 0 00-.63-13.39c-1.57-.92-3.37-1.89-5.42-2.89z'/>
+                </svg>
+                <p>Artistas</p>
+            </a>
+        </div>
+        <a href="/cuenta/index.html">
+            <svg xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512' fill='currentColor'>
+                <path id="personCircle"
+                    d='M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm-50.22 116.82C218.45 151.39 236.28 144 256 144s37.39 7.44 50.11 20.94c12.89 13.68 19.16 32.06 17.68 51.82C320.83 256 290.43 288 256 288s-64.89-32-67.79-71.25c-1.47-19.92 4.79-38.36 17.57-51.93zM256 432a175.49 175.49 0 01-126-53.22 122.91 122.91 0 0135.14-33.44C190.63 329 222.89 320 256 320s65.37 9 90.83 25.34A122.87 122.87 0 01382 378.78 175.45 175.45 0 01256 432z' />
+            </svg>
+            <p>Cuenta</p>
+        </a>
+    </nav>
+
+        <div class="first screen">
+            <h1>Tutu</h1>
+            <h2><a href="/artistas/camilo/">Camilo</a> & <a href="/artistas/pedro_capo/">Pedro Capó</a></h2>
+        </div>
+
+        <header id="header">
+            <div id="pool">
+                <i data-image="A">|A|</i>
+                <i data-image="D">|D|</i>
+                <i data-image="E">|E|</i>
+                <i data-image="Fsm">|F#m|</i>
+            </div>
+            <div id="drop"><img src="/assets/icons/eye.svg" alt="eye" id="eye"></div>
+        </header>
+
+        <div class="screen">
+            <h3>Intro</h3>
+            <div>
+                <p><i>|F#m|</i></p><br>
+                <p><i>|D|</i></p><br>
+                <p><i>|A|</i></p><br>
+                <p><i>|E|</i></p><br>
+            </div>
+            <h4 data-strum="S2">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 1 & Parte A</h3>
+            <div>
+                <p><i>|F#m|</i> Ay yo no sé de poe</p><p>sía
+                <i>|D|</i></p><br>
+                <p><i>|A|</i> Ni de filoso</p><p>fía <i>|E|</i> (Uoh-oh, uoh)</p><br>
+                <p><i>|F#m|</i> Sólo sé que tu</p>
+                <p><i>|D|</i> vida</p><br>
+                <p><i>|A|</i> Yo la quiero en la</p>
+                <p><i>|E|</i> mía</p>
+            </div>
+            <h4 data-strum="S1">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 1 & 1<sup>er</sup> Puente</h3>
+            <div>
+                Yo no <p><i>|F#m|</i> sé como ha</p><p>cer 
+                    <i>|D|</i> pa' no te</p><p>nerte <i>|A|</i><br>La'</p>
+                <p><i>|E|</i> gana' que te tengo</p>
+                <p><i>|F#m|</i><br>
+                Como ha</p><p>cer <i>|D|</i> pa'no que</p><p>rerte <i>|A|</i>,</p>
+                <p><i>|E|</i> yeah-eh</p>
+            </div>
+            <h4 data-strum="S2">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 1 & Parte B</h3>
+            <div>
+                <p><i>|F#m|</i> Tutu, nadie como</p>
+                <p><i>|D|</i> tutu, no hay un susti</p><p>tutu <i>|A|</i><br>Pa' ese cuerpo</p>
+                <p><i>|E|</i> tuyo que a mí me tiene</p>
+                <p><i>|F#m|</i> cucu<br>En un rato te</p>
+                <p><i>|D|</i> buscu, voy y te acu</p><p>rrucu <i>|A|</i>,</p>
+                <p><i>|E|</i> yeah-eh<br>No hay nadie como</p> 
+                <p><i>|F#m|</i> tutu</p>
+                <p><i>|D|</i><br>Porque no hay nadie como</p>
+                <p><i>|A|</i> tutu</p>
+                <p><i>|E|</i><br>No hay nadie como</p>
+                <p><i>|F#m|</i> tutu (nadie como</p>
+                <p><i>|D|</i> tú)<br>No hay nadie como</p>
+                <p><i>|A|</i> tutu (nadie como tú)</p><br>
+                <p><i>|E|</i> (Yeah, yeah, yeah, yeah)</p> 
+            </div>
+            <h4 data-strum="S3">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 2 & Parte A'</h3>
+            <div>
+                <p><i>|F#m|</i> Tamo' online como en Youtube</p><br>
+                <p><i>|D|</i>Conecta'os como Bluetooth</p><br>
+                <p><i>|A|</i> Si me dejas, yo soy la aguja<br>Y</p>
+                <p><i>|E|</i> tú mi muñeca vudú-dú</p><br>
+                <p><i>|F#m|</i> Yo te quiero pa' mí, mí (pa' mí)</p><br>
+                <p><i>|D|</i> Si me dices que sí, sí (que sí)</p><br>
+                <p><i>|A|</i> Me muero y desmuero solo por</p>
+                <p><i>|E|</i> tí, ha</p>
+            </div>
+            <h4 data-strum="S3">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 2 & 2<sup>do</sup> Puente</h3>
+            <div>
+                Porque yo me acu<p>rruco <i>|F#m|</i> solo con</p><p>tigo
+                    <i>|D|</i> (ay, yo contigo)<br>Pongamo' el</p>
+                <p><i>|A|</i> aire en dieciséis pa' mo</p><p>rirnos
+                    <i>|E|</i> de frío<br>(Yeah-ey, yeah-ey)<br>Y</p>
+                <p><i>|F#m|</i> vente pal' lao'</p>
+                <p><i>|D|</i> mío (vente pal' lao' mío)<br>Que mis be</p><p>sitos
+                    <i>|A|</i> de pronto te</p>
+                <p><i>|E|</i> sirven de abrigo</p>
+                <p><i>|F#m|</i><br>Como ha</p><p>cer
+                    <i>|D|</i> pa' no quererte</p>
+                <p><i>|A|</i>,</p>
+                <p><i>|E|</i> yeah-eh</p>
+            </div>
+            <h4 data-strum="S3">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 2 & Parte B</h3>
+            <div>
+                <p><i>|F#m|</i> Tutu, nadie como</p>
+                <p><i>|D|</i> tutu, no hay un susti</p><p>tutu <i>|A|</i><br>Pa' ese cuerpo</p>
+                <p><i>|E|</i> tuyo que a mí me tiene</p>
+                <p><i>|F#m|</i> cucu<br>En un rato te</p>
+                <p><i>|D|</i> buscu, voy y te acu</p><p>rrucu <i>|A|</i>,</p>
+                <p><i>|E|</i> yeah-eh<br>No hay nadie como</p> 
+                <p><i>|F#m|</i> tutu</p>
+                <p><i>|D|</i><br>Porque no hay nadie como</p>
+                <p><i>|A|</i> tutu</p>
+                <p><i>|E|</i><br>No hay nadie como</p>
+                <p><i>|F#m|</i> tutu (nadie como</p>
+                <p><i>|D|</i> tú)<br>No hay nadie como</p>
+                <p><i>|A|</i> tutu (nadie como tú)</p>
+                <p><i>|E|</i></p>
+            </div>
+            <h4 data-strum="S3">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 2 & 2<sup>do</sup> Puente</h3>
+            <div>
+                Porque yo me acu<p>rruco <i>|F#m|</i> solo con</p><p>tigo
+                    <i>|D|</i> (ay, yo contigo)<br>Pongamo' el</p>
+                <p><i>|A|</i> aire en dieciséis pa' mo</p><p>rirnos
+                    <i>|E|</i> de frío<br>(Yeah-ey, yeah-ey)<br>Y</p>
+                <p><i>|F#m|</i> vente pal' lao'</p>
+                <p><i>|D|</i> mío (vente pal' lao' mío)<br>Que mis be</p><p>sitos
+                    <i>|A|</i> de pronto te</p>
+                <p><i>|E|</i> sirven de abrigo</p>
+                <p><i>|F#m|</i><br>Como ha</p><p>cer
+                    <i>|D|</i> pa' no quererte</p>
+                <p><i>|A|</i>,</p>
+                <p><i>|E|</i> yeah-eh</p>
+                <p><i>|F#m|</i></p>
+                </div>
+            <h4 data-strum="S3">Rasguido</h4>
+        </div>
+        
+        <div class="screen">
+            <h3>Verso 2 & 1<sup>er</sup> Puente</h3>
+            <div>
+                <p>Como ha</p><p>cer 
+                    <i>|D|</i> pa' no te</p><p>nerte <i>|A|</i><br>La'</p>
+                <p><i>|E|</i> gana' que te tengo</p>
+                <p><i>|F#m|</i><br>
+                Como ha</p><p>cer <i>|D|</i> pa'no que</p><p>rerte <i>|A|</i>,</p>
+                <p><i>|E|</i> yeah-eh</p>
+            </div>
+            <h4 data-strum="S2">Rasguido</h4>
+        </div>
+
+        <div class="screen">
+            <h3>Verso 2 & Coda</h3>
+            <div>
+                <p><i>|F#m|</i> Tutu, nadie como</p>
+                <p><i>|D|</i> tutu, no hay un susti</p><p>tutu <i>|A|</i><br>Pa' ese cuerpo</p>
+                <p><i>|E|</i> tuyo que a mí me tiene</p>
+                <p><i>|F#m|</i> cucu<br>En un rato te</p>
+                <p><i>|D|</i> buscu, voy y te acu<p><p>rrucu <i>|A|</i>,</p>
+                <p><i>|E|</i> yeah-eh<br>No hay nadie como</p>
+                <p><i>|F#m|</i> tutu (nadie como</p>
+                <p><i>|D|</i> tú)<br>Porque no hay nadie como</p>
+                <p><i>|A|</i> tutu (nadie como</p>
+                <p><i>|E|</i> tú)<br>No hay nadie como</p>
+                <p><i>|F#m|</i> tutu (nadie como</p>
+                <p><i>|D|</i> tú)<br>No hay nadie como</p>
+                <p><i>|A|</i> tutu (nadie como tu-tu)</p>
+            </div>
+            <h4 data-strum="S3">Rasguido</h4>
+        </div>
+
+        <p hidden id="S1">
+            <s>down</s>
+            <span>&amp;</span>
+            <s>blanca</s>
+        </p>
+        <p hidden id="S2">
+            <s>down</s>
+            <s>up</s>
+            <s>downline</s>
+            <s>down</s>
+            <s>up</s>
+            <span>&amp;</span>
+            <s>corchea</s>
+            <s>negraP</s>
+            <!-- silencio de corchea -->
+            <s>doblecorchea</s>
+        </p>
+        <p hidden id="S3">
+            <s>down</s>
+            <s>up</s>
+            <s>downline</s>
+            <s>down</s>
+            <s>up</s>
+            <s>downline</s>
+            <span>&amp;</span>
+            <s>doblecorchea</s>
+            <!-- silencio de corchea -->
+            <s>doblecorchea</s>
+            <!-- silencio de corchea -->
+        </p>
+
+    <footer>
+        <h2>Te ha gustado?</h2>
+        <div>
+            <a href="https://www.instagram.com/songly_music/" aria-label="Instagram" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"></path>
+                    <path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"></path>
+                </svg>
+            </a>
+            <a href="https://twitter.com/songly_app" aria-label="Twitter" rel="noopener">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z"></path>
+                </svg>
+            </a>
+            <a href="mailto:songlymusic@gmail.com" aria-label="Mail" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512" fill="currentColor">
+                    <path d="M424 80H88a56.06 56.06 0 00-56 56v240a56.06 56.06 0 0056 56h336a56.06 56.06 0 0056-56V136a56.06 56.06 0 00-56-56zm-14.18 92.63l-144 112a16 16 0 01-19.64 0l-144-112a16 16 0 1119.64-25.26L256 251.73l134.18-104.36a16 16 0 0119.64 25.26z"></path>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    </body>
+</html>

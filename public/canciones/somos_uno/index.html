@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="/canciones/master.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link async rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Somos uno | Songly</title>
+  <script src="/canciones/master.js" async></script>
+  <script src="/canciones/audio.js" defer></script>
+</head>
+<body onscroll="scroll()">
+
+<header id="header">
+  <h1 id="cancion">Somos uno</h1>
+  <h1 id="cantante">Axel, Abel Pintos</h1>
+  <h1 id="acordes">
+    <span>|Am|<img src="/images/chords/Am1.png"></span>
+    <span>|C|<img src="/images/chords/C1.png"></span>
+    <span>|E7|<img src="/images/chords/E71.png"></span>
+    <span>|F|<img src="/images/chords/F1.png"></span>
+    <span>|G|<img src="/images/chords/G1.png"></span>
+</header>
+
+<div class="black screen" id="black">
+  <div class="top" id="top">
+    <h5>Rasguido</h5>
+    <div class="strum">
+    <h5>| Intro / Parte A / A' / B / C / Inter / Coda</h5>
+    <i class="material-icons">arrow_downward</i>
+    <i class="material-icons">arrow_upward</i>
+    <i class="material-icons">vertical_align_bottom</i>
+    <i class="material-icons">arrow_downward</i>
+    <i class="material-icons">arrow_upward</i>
+    <i class="material-icons">vertical_align_bottom</i>
+    <h5> |</h5>
+    </div>
+    <div class="strum">
+    <h5>| Puente</h5>
+    <i class="material-icons">arrow_downward</i>
+    <i class="material-icons">arrow_upward</i>
+    <i class="material-icons">vertical_align_bottom</i>
+    <i class="material-icons">arrow_downward</i>
+    <i class="material-icons">arrow_upward</i>
+    <i class="material-icons">vertical_align_bottom</i>
+    <i class="material-icons">arrow_downward</i>
+    <i class="material-icons">arrow_upward</i>
+    <i class="material-icons">vertical_align_bottom</i>
+    <i class="material-icons">arrow_downward</i>
+    <i class="material-icons">arrow_upward</i>
+    <i class="material-icons">vertical_align_bottom</i>
+    <h5> |</h5>
+    </div>
+  </div>
+    <p class="material-icons" id="arrow" onclick="arrow()" style="color: black;">arrow_downward</p>
+  </div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Intro &#9834;</h2>
+  <h4>
+  <i class="material-icons" onclick="morph(); play()" id="play">play_arrow</i>
+  <i class="material-icons" onclick="restart()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/1.mp3" type="audio/mp3" id="audio" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black">
+  <span class="black"><span class="chord">|C|</span></span>
+  <span class="black"><span class="chord">|G|</span></span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span> ×2</span></span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 1 &#9834;</h2><br>
+  <h4>Parte A
+  <i class="material-icons" onclick="morph2(); play2()" id="play2">play_arrow</i>
+  <i class="material-icons" onclick="restart2()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/2.mp3" type="audio/mp3" id="audio2" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black"><span class="chord">|C|</span> Yo soy lo que</span>
+  <span class="black"><span class="chord">|G|</span> soy no soy lo que ves</span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  <span class="black"><span class="chord">|C|</span> Yo soy mi fu</span><span class="black">turo
+    <span class="chord">|G|</span> y soy mi ayer</span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  <span class="black"><span class="chord">|C|</span> Y hoy tan solo</span>
+  <span class="black"><span class="chord">|G|</span> soy este amanecer</span>
+  <span class="black"><span class="chord">|Am|</span><br>Y los ojos</span>
+  <span class="black"><span class="chord">|F|</span> que te vieron nacer</span>
+  <span class="black"><span class="chord">|C|</span><br>Soy tan simple</span>
+  <span class="black"><span class="chord">|G|</span> que casi ni me ves</span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 1 &#9834;</h2><br>
+  <h4>Parte A'
+  <i class="material-icons" onclick="morpp(); play3()" id="play3">play_arrow</i>
+  <i class="material-icons" onclick="restart3()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/3.mp3" type="audio/mp3" id="audio3" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black"><span class="chord">|C|</span> Yo soy lo que</span>
+  <span class="black"><span class="chord">|G|</span> soy no soy lo que ves</span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  <span class="black"><span class="chord">|C|</span> No soy cuna de</span>
+  <span class="black"><span class="chord">|G|</span> oro ni simple Moi</span><span class="black">sés
+    <span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  <span class="black"><span class="chord">|C|</span> Soy el desam</span><span class="black">paro
+    <span class="chord">|G|</span> del corazón</span>
+  <span class="black"><span class="chord">|Am|</span><br>De aquel que pe</span><span class="black">lea
+    <span class="chord">|F|</span> y no tiene voz</span>
+  <span class="black"><span class="chord">|C|</span><br>Soy la mano</span>
+  <span class="black"><span class="chord">|G|</span> que te quiere ayudar</span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 1 &#9834;</h2><br>
+  <h4>Puente
+  <i class="material-icons" onclick="morph4(); play4()" id="play4">play_arrow</i>
+  <i class="material-icons" onclick="restart4()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/4.mp3" type="audio/mp3" id="audio4" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black">No hablo solo de</span>
+  <span class="black"><span class="chord">|E7|</span> mí, cuando digo que</span>
+  <span class="black"><span class="chord">|Am|</span> soy<br>Te hablo de ese lu</span><span class="black">gar
+    <span class="chord">|G|</span> donde nace el a</span><span class="black">mor
+    <span class="chord">|C|</span>, que</span>
+  <span class="black"><span class="chord">|F*|</span> sue</span><span class="black">ñas
+    <span class="chord">|E7*|</span></span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 1 &#9834;</h2><br>
+  <h4>Parte B
+  <i class="material-icons" onclick="morph5(); play5()" id="play5">play_arrow</i>
+  <i class="material-icons" onclick="restart5()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/5.mp3" type="audio/mp3" id="audio5" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|F|</span> e iguales</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos el que</span>
+  <span class="black"><span class="chord">|F|</span> siente y el que no está</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|F|</span> e iguales</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos uno</span>
+  <span class="black"><span class="chord">|F|</span> con los demás)</span><br>
+  <span class="black"><span class="chord">|C|</span> La piedra y el</span>
+  <span class="black"><span class="chord">|G|</span> río, el cielo y la flor</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos uno</span>
+  <span class="black"><span class="chord">|F|</span> con los demás)</span><br>
+  <span class="black"><span class="chord">|C|</span> El lobo, el cor</span><span class="black">dero
+    <span class="chord">|G|</span> y el mismo Dios</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos</span>
+  <span class="black"><span class="chord">|F|</span> uno...)</span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 1 &#9834;</h2><br>
+  <h4>Interludio
+  <i class="material-icons" onclick="morph6(); play6()" id="play6">play_arrow</i>
+  <i class="material-icons" onclick="restart6()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/6.mp3" type="audio/mp3" id="audio6" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black">
+  <span class="black"><span class="chord">|C|</span></span>
+  <span class="black"><span class="chord">|G|</span></span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span> ×2</span></span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 2 &#9834;</h2><br>
+  <h4>Parte A'
+  <i class="material-icons" onclick="morph7(); play7()" id="play7">play_arrow</i>
+  <i class="material-icons" onclick="restart7()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/7.mp3" type="audio/mp3" id="audio7" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black"><span class="chord">|C|</span> Yo soy lo que</span>
+  <span class="black"><span class="chord">|G|</span> soy no soy lo que ves</span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  <span class="black"><span class="chord">|C|</span> Yo soy mi pa</span><span class="black">sado
+    <span class="chord">|G|</span> y soy mi des</span><span class="black">pués
+    <span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  <span class="black"><span class="chord">|C|</span> Soy libre y di</span><span class="black">choso
+    <span class="chord">|G|</span> por elección</span>
+  <span class="black"><span class="chord">|Am|</span><br>Soy un loco in</span><span class="black">quieto
+    <span class="chord">|F|</span> pidiendo paz</span>
+  <span class="black"><span class="chord">|C|</span><br>Soy la mano</span>
+  <span class="black"><span class="chord">|G|</span> que te quiere ayudar</span>
+  <span class="black"><span class="chord">|Am|</span></span>
+  <span class="black"><span class="chord">|F|</span></span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 2 &#9834;</h2><br>
+  <h4>Puente
+  <i class="material-icons" onclick="morph8(); play8()" id="play8">play_arrow</i>
+  <i class="material-icons" onclick="restart8()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/8.mp3" type="audio/mp3" id="audio8" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black">No hablo solo de</span>
+  <span class="black"><span class="chord">|E7|</span> mí, cuando digo que</span>
+  <span class="black"><span class="chord">|Am|</span> soy<br>Te hablo de ese lu</span><span class="black">gar
+    <span class="chord">|G|</span> donde nace el a</span><span class="black">mor
+    <span class="chord">|C|</span>, que</span>
+  <span class="black"><span class="chord">|F*|</span> sue</span><span class="black">ñas
+    <span class="chord">|E7*|</span></span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 2 &#9834;</h2><br>
+  <h4>Parte B
+  <i class="material-icons" onclick="morph9(); play9()" id="play9">play_arrow</i>
+  <i class="material-icons" onclick="restart9()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/9.mp3" type="audio/mp3" id="audio9" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|F|</span> e iguales</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos el que</span>
+  <span class="black"><span class="chord">|F|</span> siente y el que no está</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|F|</span> e iguales</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos uno</span>
+  <span class="black"><span class="chord">|F|</span> con los demás)</span><br>
+  <span class="black"><span class="chord">|C|</span> La piedra y el</span>
+  <span class="black"><span class="chord">|G|</span> río, el cielo, la flor</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos uno</span>
+  <span class="black"><span class="chord">|F|</span> con los demás)</span><br>
+  <span class="black"><span class="chord">|C|</span> El lobo, el cor</span><span class="black">dero
+    <span class="chord">|G|</span> y el mismo Dios</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos</span>
+  <span class="black"><span class="chord">|F|</span> uno...)</span><br>
+  </p>
+  </div>
+  </div>
+</div>
+
+<div class="big screen">
+  <div class="center">
+  <div class="text">
+  <h2>Verso 2 &#9834;</h2><br>
+  <h4>Coda
+  <i class="material-icons" onclick="morph10(); play10()" id="play10">play_arrow</i>
+  <i class="material-icons" onclick="restart10()">close</i>
+  </h4>
+  <audio src="/canciones/somos_uno/audio/10.mp3" type="audio/mp3" id="audio10" loop></audio>
+  </div>
+  <div class="image">
+  <p>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|F|</span> e iguales</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos el que</span>
+  <span class="black"><span class="chord">|F|</span> siente y el que no está</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|F|</span> e iguales</span><br>
+  <span class="black"><span class="chord">|C|</span> Oh-Oh</span>
+  <span class="black"><span class="chord">|G|</span> Oh-Oh oh</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos</span>
+  <span class="black"><span class="chord">|F|</span> uno con los demás)</span>
+  <span class="black"><span class="chord">|C|</span><br>Todos somos</span>
+  <span class="black"><span class="chord">|G|</span> uno con los demás</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos</span>
+  <span class="black"><span class="chord">|F|</span> uno con los demás)</span>
+  <span class="black"><span class="chord">|C|</span><br>Todos somos</span>
+  <span class="black"><span class="chord">|G|</span> uno con los demás</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos</span>
+  <span class="black"><span class="chord">|F|</span> uno con los demás)</span>
+  <span class="black"><span class="chord">|C|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|G|</span> e iguales</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos</span>
+  <span class="black"><span class="chord">|F|</span> uno con los demás)</span>
+  <span class="black"><span class="chord">|C|</span><br>Somos tan dis</span><span class="black">tintos
+    <span class="chord">|G|</span> e iguales</span>
+  <span class="black"><span class="chord">|Am|</span><br>(Todos somos</span>
+  <span class="black"><span class="chord">|F|</span> uno...)</span>
+  </p>
+  </div>
+  </div>
+</div>
+
+  </body>
+</html>

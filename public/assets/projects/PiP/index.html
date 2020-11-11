@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture in Picture</title>
+    <script src="/assets/projects/PiP/app.js"></script>
+    <style>
+        div{width: 80%;height: 60px; display: flex; justify-content: flex-end; background: #404040; transition: .6s;}
+        button{color: white; background: inherit; border: none;}
+    </style>
+</head>
+<body>
+    <div id="div">
+        <button id="button" onclick="open">Video</button>
+        <iframe id="iframe" hidden width="560" height="315" src="https://www.youtube.com/embed/zSStSA6-YYw?controls=0" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+@use 'sass/_mixins' as *
+@use 'sass/_nav'
+@use 'sass/_header'
+@use 'sass/_footer'
+@use 'sass/_about'
+
+html
+    --yellow: #fede40
+    --orange: #ff8040
+    --red: #ff4040
+    --magenta: #ff4080
+    --indigo: #4000ff
+:focus 
+    outline: none
+::-webkit-scrollbar
+    background: white
+::-webkit-scrollbar-thumb
+    background: #404040
+    height: 120px
+::selection
+    background: var(--yellow)
+
+body
+    @include box(calc(100% - 90px), initial, 0 120px, 0, 0)
+    position: relative
+    left: 90px
+    overflow-x: hidden
+    
+    background: linear-gradient(135deg, #f0ffff, white 75vh)
+    h1, h2, h3, h4, h5, h6 
+        user-select: none
+    [hidden]
+        @include visibility(hidden, 0)    
+    div.first 
+        justify-content: center
+        h1
+            font: 600 120px/120px Nexa
+
+            width: fit-content
+            margin: 0
+
+            background: -webkit-linear-gradient(0deg, var(--orange), var(--magenta))
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+        h2
+            font: 600 48px/48px Noah
+            font-feature-settings: 'ss01'
+            color: #202020
+            width: fit-content
+            margin: 0
+            a 
+                color: #202020
+                text-decoration: none 
+                position: relative
+                transition: color .3s ease
+                &:hover
+                    color: var(--indigo)
+                    &::after 
+                        opacity: 1
+                        transform: rotateY(45deg)
+                &::after
+                    content: ''
+                    position: absolute
+                    left: 0 
+                    bottom: 0 
+                    width: 100%
+                    height: 6px 
+                    border-radius: 3px
+                    opacity: 0
+                    background: var(--indigo) 
+                    transition: all .3s cubic-bezier(0, 0.5, 0.5, 1.5)
+    div.screen
+        height: calc(100vh - 120px)
+
+        display: flex
+        flex-direction: column
+        h3
+            font: 600 36px/54px Noah
+
+            margin: 24px 0
+
+            display: flex
+            align-self: start 
+
+            box-shadow: inset 0px -12px var(--red)
+            sup 
+                font-size: 24px
+                line-height: initial
+        h4
+            @include flex(row, center, center)
+            font: 400 18px/60px Noah
+            font-variant: all-small-caps
+            color: white
+
+            z-index: 1
+
+            width: 120px
+            border-radius: 30px
+            margin: 0px
+   
+            align-self: flex-end
+
+            background: #404040
+
+            transition: .6s
+            &:hover
+                width: 300px
+            span 
+                font: 400 24px/60px Noah
+                margin: 0 12px
+                pointer-events: none
+            iframe 
+                width: 24px
+                height: 36px
+                border: none
+                pointer-events: none
+        div
+            font: 400 24px Noah
+            height: 100%
+        p
+            color: #202020
+            // position: relative
+            display: inline
+            transition: all .3s ease
+            &:hover
+                color: black
+                box-shadow: inset 0 -12px var(--yellow)
+                i
+                    color: red
+            i
+                font: normal 600 24px Noah
+                color: var(--red)
+                user-select: none
+                transition: color .3s ease
+    

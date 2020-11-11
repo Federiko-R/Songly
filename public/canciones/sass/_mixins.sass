@@ -1,0 +1,22 @@
+@mixin fix($top, $right, $bottom, $left, $z)
+    position: fixed
+    top: $top 
+    right: $right 
+    bottom: $bottom 
+    left: $left
+    z-index: $z
+@mixin box($width, $height, $pad, $rad, $margin)
+    box-sizing: border-box
+    width: $width 
+    height: $height
+    padding: $pad
+    border-radius: $rad
+    margin: $margin
+@mixin flex($direction, $align, $justify)
+    display: flex
+    flex-direction: $direction 
+    align-items: $align
+    justify-content: $justify
+@mixin visibility($visibility, $opacity)
+    visibility: $visibility
+    opacity: $opacity

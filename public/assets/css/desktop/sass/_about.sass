@@ -1,0 +1,35 @@
+@use '_mixins' as *
+nav::before, nav::after
+    content: ''
+    opacity: 0
+nav.about
+    @include flex(column, center, start)
+    @include box(100%, 100%, 0 20%, 0, 0)
+    transition: .6s
+    &::before
+        content: 'About Us'
+        font: bold 120px Noah
+        color: white
+        opacity: 1
+        transition: opacity .6s .6s
+    &::after
+        content: 'Songly es un emprendimiento que creamos para todos aquellos practicantes que buscaran aprender con estilo'
+        font: 36px Noah 
+        font-feature-settings: 'ss01'
+        text-align: center
+        color: #fede
+        opacity: 1 
+        transition: opacity .9s .9s
+    &::selection
+        background: #fede
+
+    button 
+        @include fix(27px, unset, unset, 27px, 1)
+        svg 
+            cursor: pointer
+            &:hover
+                color: var(--indigo)
+            path 
+                d: path('M2 2 L6 6 M2 6 L6 2 M2 2 L6 6')
+    div, a, p
+        display: none

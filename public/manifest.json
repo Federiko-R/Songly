@@ -1,0 +1,80 @@
+{
+    "name": "Songly",
+    "short_name": "Songly",
+    "description": "Songly, tu manera de aprender musica",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "assets/images/64x64.png",
+            "type": "image/png",
+            "sizes": "64x64",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/128x128.png",
+            "type": "image/png",
+            "sizes": "128x128",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/256x256.png",
+            "type": "image/png",
+            "sizes": "256x256",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/1024x1024.png",
+            "type": "image/png",
+            "sizes": "1024x1024",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/Icon-60.png",
+            "type": "image/png",
+            "sizes": "60x60",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/Icon-60@2x.png",
+            "type": "image/png",
+            "sizes": "120x120",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/Icon-60@3x.png",
+            "type": "image/png",
+            "sizes": "180x180",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/Icon-76.png",
+            "type": "image/png",
+            "sizes": "76x76",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "assets/images/Icon-76@2x.png",
+            "type": "image/png",
+            "sizes": "152x152",
+            "purpose": "any maskable"
+        }
+    ],
+    "shortcuts": [{"name": "canciones", "url": "/mobile/search", 
+        "icons": [{"src": "assets/images/192x192.png", "sizes": "192x192"}]}]
+}

@@ -1,0 +1,38 @@
+@use '_mixins.sass' as *
+    
+nav 
+    @include fix(0, unset, unset, 0, 10)
+    @include box(90px, 100vh, 27px, 0, 0)
+    @include flex(column, start, space-between)
+    background: #404040 
+    transition: width .6s ease
+    &:hover
+        width: 300px 
+        p 
+            @include visibility(visible, 1)
+    div 
+        @include flex(column, start, space-evenly)
+        height: 60%
+    a 
+        @include flex(row, center, unset)
+        color: white 
+        text-decoration: none 
+        &:hover 
+            color: var(--indigo)
+            p 
+                padding: 6px 18px 
+                background: white
+        svg 
+            width: 36px 
+            height: 36px 
+            padding: 0 27px 0 0 
+
+            transition: all .3s ease
+        p 
+            @include box(unset, 36px, 6px 0px, 30px, 0) 
+            @include visibility(hidden, 0)
+            font: 400 24px/24px Noah
+            font-feature-settings: 'ss01'
+            user-select: none
+            transition: .3s, visibility .6s, opacity .6s
+                

@@ -1,0 +1,94 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+  transition: all .5s ease-in-out 0s;
+  user-select: none;
+}
+*::selection{
+  background: black;
+  color: white;
+}
+body{
+  margin: 0;
+  min-height: 200vh;
+}
+header{
+  display: flex;
+  background-color: transparent;
+  place-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: -webkit-fill-available;
+  height: 8rem;
+  z-index: 1;
+}
+footer{
+  display: flex;
+  background-color: black;
+  position: relative;
+  bottom: 0;
+  place-content: space-evenly;
+  margin: 0rem 4rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+
+h1{
+  color: white
+}
+div.hero{
+  overflow: hidden;
+  background-image: url(images/guitar-player.webp);
+  background-size: cover;
+  background-position-y: center;
+}
+
+
+div.screen{
+  height: 100vh;
+  display: flex;
+  place-content: space-evenly;
+}
+div.center{
+  place-self: center;
+  display: flex;
+}
+div.text{
+  margin: 2rem;
+}
+div.image{
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: #0000001a 0px 0px 20px;
+  border-radius: 1rem;
+}
+div.image:hover{
+  box-shadow: #fff 0px 0px 0px 0px;
+}
+h3{
+  color: #444;
+  font-weight: 400;
+}
+span.chord{
+  color: #900000;
+}
+a{
+  text-decoration: none;
+  color: white
+}
+h2{
+  color: #222 !important;
+}
+h4{
+  color: #222;
+  font-weight: 500;
+}
+
+
+span{transition: color .2s; user-select: text !important;}
+span::selection{background-color: #dff;}
+.black{color: #444; user-select: text;}
+.black:hover{color: black !important;
+  text-shadow: currentColor 0.2px 0.2px 0.2px;}
+.black:hover .chord{color: blue}

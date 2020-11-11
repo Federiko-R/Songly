@@ -1,0 +1,33 @@
+@use '_mixins.sass' as *
+nav 
+    @include fix(unset, 30px, 30px, unset, 0)
+    @include box(60px, 60px, 0, 30px, 0)
+    background: linear-gradient(to right, var(--orange), var(--yellow), var(--magenta))
+    transition: width .6s, padding .6s
+    &.open 
+        @include box(240px, 60px, 0 60px 0 0, 30px, 0)
+        a 
+            opacity: 1 
+    div 
+        display: flex 
+    button 
+        @include fix(unset, 30px, 30px, unset, 1)
+        @include box(60px, 60px, 12px, 30px, 0)
+        border: none 
+        outline: none
+        background: #202020
+        color: white
+        &::before, &::after
+            content: ''
+            opacity: 0 
+        svg 
+            background: inherit
+            path 
+                transition: .3s
+    a 
+        @include box(60px, 60px, 12px, 0, 0)
+        color: white
+        opacity: 0 
+        transition: opacity .3s 
+    p, div a:first-child, > a:last-child
+        display: none

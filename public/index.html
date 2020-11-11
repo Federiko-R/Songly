@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Songly Music</title>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="Porque sabemos de musica">
+    <meta name="google-site-verification" 
+      content="wGGi3BWMv7kd2bUKcZQSdd13Tc8uWwTcPJUnvF0Yiag">
+    <!-- FIREBASE SCRIPTS -->
+    <script async src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <script async src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <script async src="/__/firebase/init.js"></script>
+    <!-- Main -->
+    <script src="main.js"></script>
+    <!-- Scroll -->
+    <script async src="scroll.js"></script>
+    <!-- TypeWriter -->
+    <script defer src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script defer src="typewriter.js" type="module"></script>
+    <!-- Service Worker -->
+    <script src="/sw.js"></script>
+    <!-- LINKS -->
+    <link rel="canonical" href="https://songly-music.web.app/">
+    <!--<link rel="alternate" href="https://songly-music.web.app/mobile">-->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="/main.css">
+    <!-- Web Assets-->
+    <link rel="preload" href="/images/quaver.png" as="image">
+    <link async rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap">
+    <link async rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link defer rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link async rel="icon" href="images/16px.png" sizes="16x16">
+    <link async rel="icon" href="images/32px.png" sizes="32x32">
+    <!-- Apple Mobile Web App -->
+    <link rel="apple-touch-icon" href="/images/Icon-60@2x.png" sizes="120x120">   
+    <link rel="apple-touch-icon" href="/images/Icon-60@3x.png" sizes="180x180">
+    <link rel="apple-touch-startup-image" href="images/512x512.png" sizes="512x512">
+    <link rel="apple-touch-startup-image" href="images/1024x1024.png" sizes="1024x1024">
+
+  </head>
+
+  <body onscroll="scroll()">
+
+    <div class="loader" id="loader" onload="load()"></div>
+
+    <header class="nav" id="header">
+
+      <h1 id="Songly">Songly</h1>
+
+      <a href="canciones/index.html">
+        <h2 id="canciones">Canciones</h2>
+      </a>
+
+      <a href="/acordes">
+        <h2 id="acordes">Acordes</h2>
+      </a>
+
+      <div id="expansible">
+        <h2 id="menu">Menu</h2>
+        <div class="sub-menu">
+          <a class="anchor" href="javascript:alert('❤');">Iniciar sesion</a>
+          <a class="anchor">Contacto</a>
+          <a class="anchor">Sobre nosotros</a>
+        </div>
+        <div>
+
+    </header>
+
+    <div class="hero screen" id="hero"></div>
+
+    <div class="demi-hero">Nuestros Servicios</div>
+
+
+    <div class="screen">
+      <div class="center">
+        <div class="text">
+          <h2>Tus canciones <br> Favoritas! &#10084;</h2>
+        </div>
+        <div class="image">
+          <p>
+            <span class="chord">|Dm| </span> Sabes que estoy
+            <span class="chord">|C| </span> colgando en tus manos
+            <span class="chord">|Bb| </span> <br> Así que
+            <span class="chord">|F| </span> no me
+            <span class="chord">|C| </span> dejes caer <br>
+            <span class="chord">|Dm| </span> Sabes que
+            <span class="chord">|C| </span> estoy
+            <span class="chord">|Bb| </span> ...
+            <span class="chord">|F| </span> colgando en tus
+            <span class="chord">|C| </span> manos <br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen">
+      <div class="center">
+        <div class="image">
+          <p><span id="write"></span></p>
+        </div>
+        <div class="text">
+          <h2>Acordes precisos! &#10004;</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen">
+      <div class="center">
+        <div class="text">
+          <h2>Ragido simple & <br> Notacion musical!</h2>
+        </div>
+        <div class="image">
+          <p id="acordes">
+            <span id="acordes">&darr; &darr; &uarr; &uarr; &darr; &uarr; <br></span>
+            &#8645; <br>
+            <span id="acordes">&#9833; &#9835; &#9834; &#9835;</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="social">
+        <a href="mailto:songlymusic@gmail.com" class="fa fa-envelope" style="font-size: 1.3rem;"></a>
+        <a href="" class="fa fa-instagram" style="font-size: 1.5rem;"></a>
+        <a href="" class="fa fa-youtube-play" style="font-size: 1.5rem;"></a>
+        <a href="" class="fa fa-facebook-f" style="font-size: 1.5;"></a>
+      </div>
+      <h1>By F.R. &amp; J.M.</h1>
+    </footer>
+  </body>
+
+</html>

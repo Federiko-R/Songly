@@ -1,0 +1,6 @@
+<svg width="100%" height="100%" viewBox="0 0 4 6" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <title>Negra</title>
+    <path d="M0.5 4.84189C0.5 5.16565 0.817191 5.39427 1.12434 5.29189L2 5V4L0.824342 4.39189C0.630648 4.45645 0.5 4.63772 0.5 4.84189V4.84189Z" fill="white"/>
+    <path d="M2 1V4M2 4V5L1.12434 5.29189C0.817191 5.39427 0.5 5.16565 0.5 4.84189V4.84189C0.5 4.63772 0.630648 4.45645 0.824342 4.39189L2 4Z" stroke="white" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="3" cy="4" r="0.25" />
+</svg>

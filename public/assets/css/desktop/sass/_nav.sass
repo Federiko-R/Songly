@@ -1,0 +1,46 @@
+@use '_mixins' as *
+
+nav 
+    @include fix(0, unset, unset, 0, 10)
+    @include box(90px, 100vh, 27px, 0, 0)
+    @include flex(column, start, initial)
+    background: #404040 
+    transition: width .6s
+    &:hover
+        width: 300px 
+        p 
+            @include visibility(visible, 1)
+    div 
+        @include flex(column, start, center)
+        height: 100%
+        a 
+            height: 60px
+    button 
+        border: 0 
+        padding: 0
+        background: transparent
+        cursor: pointer
+    button, a 
+        @include flex(row, center, unset)
+        color: white 
+        text-decoration: none 
+        &:hover 
+            color: var(--indigo)
+            p 
+                padding: 6px 18px 
+                background: white
+        p 
+            @include box(unset, 36px, 6px 0px, 30px, 0) 
+            @include visibility(hidden, 0)
+            font: 400 24px/24px Noah
+            font-feature-settings: 'ss01'
+
+            user-select: none
+            transition: .6s
+    svg 
+        @include box(36px, 36px, 0, 0, 0 27px 0 0)
+        transition: .3s
+        path 
+            transition: .3s    
+        
+                

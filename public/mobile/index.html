@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="Songly, porque sabemos de musica">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <link rel="canonical" href="https://songly-music.web.app/mobile/">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="/mobile/sassy.css">
+        <link rel="icon" href="/images/16px.png">
+        <link rel="icon" href="/images/32px.png">
+        <link rel="apple-touch-icon" href="/images/Icon-60@2x.png">
+        <link rel="apple-touch-icon" href="/images/Icon-60@3x.png">
+        <link rel="apple-touch-startup-image" href="images/1024x1024.png">
+        <link rel="preload" as="script" href="/mobile/loading.js">
+        <link rel="preload" as="font" href="/fonts/NexaB.otf" crossorigin="anonymous">
+        <link rel="preload" as="font" href="/fonts/NexaL.otf" crossorigin="anonymous">
+        <script src="/mobile/loading.js"></script>
+        <script async src="/mobile/menu.js"></script>
+        <script defer src="/mobile/app.js"></script>
+        <script async type='text/javascript'>
+            if ('serviceWorker' in navigator) {navigator.serviceWorker.register('/sw.js')}
+        </script>
+        <title>Songly Mobile</title>
+    </head>
+
+    <body>
+        <div id="splash"></div>
+        <img src="/assets/images/Quaver.svg" alt="icon" id="splash-img">
+        <header>
+            <h1>Songly</h1>
+        </header>
+        <div class="slogan">
+            <p>Tu manera de aprender música</p>
+            <button id="App">App</button>
+        </div>
+        <footer id="footer">
+                <div id="menu">
+                    <h2>Menu</h2>
+                </div>
+            <a href="/mobile/artistas/">Artistas</a>
+            <img hidden src="/icons/library-music.png" width="36" height="36" layout="intrinsic" alt="" id="one">
+            </img>
+            <img hidden src="/icons/music-video.png" width="36" height="36" layout="intrinsic" alt="" id="two">
+            </img>
+            <img hidden src="/icons/music-note.png" width="36" height="36" layout="intrinsic" alt="" id="three">
+            </img>
+        </footer>
+    </body>
+
+</html>

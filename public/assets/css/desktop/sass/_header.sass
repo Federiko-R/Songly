@@ -1,0 +1,73 @@
+@use '_mixins' as *
+
+header
+    position: sticky 
+    top: 30px
+    z-index: 3
+
+    @include box(100%, 60px, 0, 30px, 30px 0)
+    @include flex(row, start, space-between)
+    
+    box-shadow: 0 0 30px 30px white
+
+    transition: .3s
+    &.hidden 
+        box-shadow: 0 0 white
+        pointer-events: none
+        #pool 
+            @include visibility(hidden, 0)
+    div
+        @include flex(unset, unset, space-between)
+        width: 100%
+    #pool
+        position: sticky 
+        top: 30px
+        z-index: 3
+        
+        @include box(calc(100% - 120px), 60px, 0, 30px, 0)
+        @include flex(unset, unset, center)
+
+        background: linear-gradient(to right, var(--orange), var(--red), var(--magenta))
+        color: white
+        background-position: center 
+        background-repeat: no-repeat
+        
+        transition: .6s
+        &:hover
+            height: 360px
+            i:hover
+                padding: 0 1em
+                background: white
+                color: var(--indigo)
+        i
+            font: 600 24px/36px Noah
+            
+            border-radius: 30px
+            margin: 12px
+
+            display: flex
+            align-self: start
+
+            user-select: none
+            transition:  .3s 
+    #drop
+        @include flex(unset, center, center)
+        width: 60px
+        height: 60px
+        border-radius: 30px
+
+        background: #404040
+        box-shadow: 0 0 30px 120px white
+
+        color: white
+        
+        cursor: pointer
+        pointer-events: all
+        #eye
+            width: 24px
+            height: 24px
+
+            user-select: none
+            transition: opacity .3s ease
+            &.fade
+                opacity: 0

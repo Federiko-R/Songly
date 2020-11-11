@@ -1,0 +1,6 @@
+<svg id="svg" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M5 5L5 1L7 1 M1 7L1 5L5 5 M1 7L5 7L5 5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> 
+    <animate attributeName="d" to="M 1 2 L 4 2 L7 2 M 1 4 L 4 4 L 7 4 M 1 6 L 4 6 L 7 6" begin="click" dur=".6s" fill="freeze"/>
+    <animate attributeName="stroke-width" from="2" to="1" begin="click" dur=".6s" fill="freeze"/>
+    </path>
+</svg>
